@@ -59,14 +59,14 @@
     </h1>
 
     <!-- title -->
-    <h1 class="blur-reveal delay-4  text-3xl md:text-4xl font-bold leading-tight mb-6">
+    <!-- <h1 class="blur-reveal delay-4  text-3xl md:text-4xl font-bold leading-tight mb-6">
       {title}
-    </h1>
+    </h1> -->
 
     <!-- subtitle -->
-    <p class="blur-reveal delay-3 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+    <!-- <p class="blur-reveal delay-3 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
       {subtitle}
-    </p>
+    </p> -->
 
     <!-- founder -->
     <p class="blur-reveal delay-3 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
