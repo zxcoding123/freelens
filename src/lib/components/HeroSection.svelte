@@ -45,7 +45,7 @@
   <div class="relative max-w-7xl h-screen mx-auto px-6 py-28 text-center flex flex-col justify-center items-center">
 
     <div>
-      <img src={image} alt="Freelens Logo" class="w-100 blur-reveal delay-1" />
+      <img src={image} alt="Freelens Logo" class="w-75 blur-reveal delay-1" />
     </div>
 
     <!-- badge -->
