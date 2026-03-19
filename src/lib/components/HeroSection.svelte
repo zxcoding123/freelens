@@ -1,8 +1,10 @@
-<script>
+<script lang="ts">
   const { 
     title = "Manage Clients, Projects & Billing",
     subtitle = "A powerful offline-first platform to organize projects, track time, and generate invoices effortlessly."
   } = $props();
+
+  import image from '$lib/assets/freelens_logo_bw.svg';
 </script>
 
 <style>
@@ -41,6 +43,10 @@
   <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_#ffffff_1px,_transparent_1px)] [background-size:24px_24px]"></div>
 
   <div class="relative max-w-7xl h-screen mx-auto px-6 py-28 text-center flex flex-col justify-center items-center">
+
+    <div>
+      <img src={image} alt="Freelens Logo" class="w-100 blur-reveal delay-1" />
+    </div>
 
     <!-- badge -->
     <div class=" inline-flex items-center gap-2 px-4 py-1 rounded-full bg-white/10 backdrop-blur text-sm mb-6 border border-white/10">
