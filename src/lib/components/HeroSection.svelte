@@ -4,7 +4,7 @@
     subtitle = "A powerful offline-first platform to organize projects, track time, and generate invoices effortlessly."
   } = $props();
 
-  import image from '$lib/assets/freelens_logo_bw.svg';
+  import image from '$lib/assets/freelens_logo_on_white.png';
 </script>
 
 <style>
@@ -45,7 +45,7 @@
   <div class="relative max-w-7xl h-screen mx-auto px-6 py-28 text-center flex flex-col justify-center items-center">
 
     <div>
-      <img src={image} alt="Freelens Logo" class="w-75 blur-reveal delay-1" />
+      <img src={image} alt="Freelens Logo" class="w-15 mb-5 blur-reveal delay-1" />
     </div>
 
     <!-- badge -->
