@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/AHMAD/Desktop/Projects/freelens_project/**)",
+      "Read(//c/Users/AHMAD/Desktop/Projects/freelens_project/freelens_app/src/lib/components/**)",
+      "Read(//c/Users/AHMAD/Desktop/Projects/freelens_project/freelens_app/**)",
+      "Read(//c/Users/AHMAD/Desktop/Projects/freelens_project/freelens_app/src/routes/\\\\\\(app\\\\\\)/settings/**)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 5199 -State Listen | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -Confirm:$false })",
+      "PowerShell(npm run check 2>&1)",
+      "PowerShell(npx vite dev --port 5199 --strictPort)",
+      "PowerShell($s=\"C:\\\\Users\\\\AHMAD\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-AHMAD-Desktop-Projects-freelens-project-freelens\\\\0e4c6046-ecaf-4090-8a74-0d99984782c6\\\\scratchpad\"; for\\($i=0;$i -lt 30;$i++\\){ try { Invoke-WebRequest http://localhost:5199/ -UseBasicParsing -TimeoutSec 5 | Out-Null; break } catch { Start-Sleep 1 } }; node \"$s\\\\shot.mjs\" $s)",
+      "Bash(npm uninstall *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
