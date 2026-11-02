@@ -53,6 +53,10 @@
 			<span class="font-semibold tracking-[0.18em] text-neutral-300 uppercase">Freelens</span>
 		</a>
 		<p>Founded, designed and built by Ahmad Pandaog Aquino</p>
-		<p>© {new Date().getFullYear()}</p>
+		<nav class="flex items-center gap-5">
+			<a href="/privacy" class="transition-colors hover:text-neutral-200">Privacy Policy</a>
+			<a href="/terms" class="transition-colors hover:text-neutral-200">Terms &amp; Conditions</a>
+			<span>© {new Date().getFullYear()}</span>
+		</nav>
 	</div>
 </footer>

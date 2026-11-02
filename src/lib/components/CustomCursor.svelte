@@ -40,9 +40,9 @@
   class="cursor-wrapper {isHidden ? 'opacity-0' : 'opacity-100'}"
   style="transform: translate({$coords.x}px, {$coords.y}px)"
 >
-  <div class="cursor-ring {isPointer ? 'scale-150 border-slate-900' : 'scale-100 border-white/50'}"></div>
+  <div class="cursor-ring {isPointer ? 'scale-75 border-white' : 'scale-100 border-white/50'}"></div>
   
-  <div class="cursor-dot {isPointer ? 'opacity-0' : 'opacity-100'}"></div>
+  <div class="cursor-dot" class:zoomed={isPointer}></div>
 </div>
 
 <style>
@@ -67,7 +67,7 @@
     margin-left: -20px;
     border: 1.5px solid white;
     border-radius: 50%;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease;
     backdrop-filter: invert(0.1); 
   }
 
@@ -80,6 +80,20 @@
     background-color: white;
     border-radius: 50%;
     mix-blend-mode: difference;
+    transition: transform 0.2s ease-out;
+  }
+
+  /* Shrink the dot when hovering links/buttons */
+  .cursor-dot.zoomed {
+    transform: scale(0.5);
+    animation: dot-settle 0.4s ease-out;
+  }
+
+  /* Dips down smoothly to its smaller size */
+  @keyframes dot-settle {
+    0% { transform: scale(1); }
+    60% { transform: scale(0.4); }
+    100% { transform: scale(0.5); }
   }
 
   @media (hover: none) and (pointer: coarse) {
