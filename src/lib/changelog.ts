@@ -10,6 +10,35 @@ export type ChangelogEntry = {
 
 export const changelog: ChangelogEntry[] = [
 	{
+		date: '2026-11-03',
+		kind: 'new',
+		title: 'Partial payments, your logo and safer backups',
+		summary:
+			'Invoices can now be paid in installments, carry your branding and payment details, and your data is better protected against loss.',
+		items: [
+			'Record payments (amount, date, method) on sent invoices. They show "Partially paid" or "Overdue · part paid" until payments cover the total, then become paid.',
+			'"Mark as paid" records the remaining balance, and removing a payment reopens a paid invoice.',
+			'Outstanding, overdue and client totals use the balance due, and "Paid this month/year" counts money actually received, including part-payments.',
+			'Printed invoices show Total, Paid and Balance due once anything has been paid.',
+			'Add payment details in Settings to show a "How to pay" section on invoices. You can edit it per invoice.',
+			'Upload your business logo in Settings. It appears on invoices and agreements.',
+			'Freelens asks the browser for persistent storage, tracks your last backup date and reminds you on the dashboard after 7 days without one.',
+			'Safer restore: preview a backup\'s record counts against your device and download a copy of current data before replacing it.',
+			'The timer now requires a project before it can start, and the sidebar can be collapsed.'
+		]
+	},
+	{
+		date: '2026-11-01',
+		kind: 'new',
+		title: 'Freelens for desktop',
+		summary: 'Freelens now ships as a native desktop app built with Tauri, alongside the installable web app.',
+		items: [
+			'App and installer icons generated from the Freelens logo.',
+			'Opens centered at 1280x800 with an 800x600 minimum size.',
+			'The offline service worker is disabled in desktop builds, so updates are never served from a stale cache.'
+		]
+	},
+	{
 		date: '2026-11-01',
 		kind: 'improved',
 		title: 'Jump straight to unfilled placeholders',
